@@ -203,7 +203,7 @@ img {
 }
 
 .projects__wrapper {
-    min-width: 36rem;
+    width: 36rem;
     margin: 8rem auto 8rem;
     padding: 0 1.6rem;
     display: flex;
@@ -669,7 +669,7 @@ img {
 
 .footer__wrapper {
     max-width: 36rem;
-    margin: 8rem auto 3.2rem;
+    margin: 8rem auto 0;
     padding: 0 1.6rem;
     display: flex;
     flex-direction: column;
