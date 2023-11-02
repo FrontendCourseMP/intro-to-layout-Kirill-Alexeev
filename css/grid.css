@@ -1,0 +1,148 @@
+:root {
+    --background-color: #0A1117;
+    --headline-color: #fff;
+    --start-text-button: #10151A;
+    --start-button-color: #FFCF01;
+    --projects-item-color: #182632;
+    --opportunities-link-color: #37424D;
+    --tools-link-color: #8395A7;
+    --newsletter-paragraf-color: #9AAFC3;
+    --newsletter-button-color: #E2C1F9;
+    --projects-text-color: #FFA800;
+    --tools-button-color: #FFCF0126;
+    --newsletter-background-color: #14212D;
+    --newsletter-border-color: #2A3744;
+    --newsletter-input-color: #3D4C5B;
+    --input-background-color: #121E28;
+    --podcasts-paragraf-color: #E2E2E2;
+    font-size: 62.5%
+}
+
+* {
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+}
+
+h2 {
+    color: var(--headline-color);
+    text-align: center;
+    font-family: "Montserrat", sans-serif;
+    font-size: 2.8rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 3.6rem;
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+}
+
+img {
+    color: var(--headline-color);
+    font-family: "Montserrat", sans-serif;
+    font-size: 1rem;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 3.6rem;
+}
+
+body {
+    background-color: var(--background-color);
+}
+
+.header__wrapper {
+    max-width: 36rem;
+    margin: 1.6rem auto;
+    padding: 0 1.6rem;
+    display: flex;
+    justify-content: space-between;
+}
+
+.logo {
+    text-decoration: none;
+}
+
+.header__menu {
+    background-color: var(--background-color);
+    text-align: center;
+    width: 2.4rem;
+    height: 2.4rem;
+    border: 0cm;
+}
+
+.header__burger-menu {
+    background-color: var(--background-color);
+}
+
+.mondrian {
+    display: grid;
+    grid-template-columns: auto repeat(3, 1fr);
+    grid-template-rows: repeat(6, 1fr);
+}
+
+
+
+.dashboard {
+    display: grid;
+}
+
+.gallery {
+    display: grid;
+}
+
+.footer {
+    background-color: var(--input-background-color);
+}
+
+.footer__wrapper {
+    max-width: 36rem;
+    margin: 8rem auto 0;
+    padding: 0 1.6rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.footer__logo {
+    margin: 3.2rem auto 3.2rem;
+}
+
+.footer__menu {
+    list-style-type: none;
+    text-align: center;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.footer__menu-link {
+    color: var(--headline-color);
+    text-decoration: none;
+    font-family: "Montserrat", sans-serif;
+    font-size: 1.4rem;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    margin: 0 2rem;
+}
+
+.footer__list {
+    list-style-type: none;
+    text-align: center;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 3.2rem auto;
+}
+
+.footer__icon {
+    width: 4rem;
+    height: 4rem;
+    margin: 0 1rem;
+}
