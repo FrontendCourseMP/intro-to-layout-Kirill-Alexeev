@@ -245,9 +245,10 @@ img {
     margin: 0.6rem 0.6rem;
 }
 
-.projects__text {
+.projects__main-link {
     background: var(--projects-text-color);
     color: var(--background-color);
+    display: block;
     text-align: center;
     font-family: "Montserrat", sans-serif;
     font-size: 1.3rem;
@@ -256,8 +257,11 @@ img {
     line-height: 2.4rem;
     padding: 0.2rem 1.2rem;
     gap: 0.8rem;
+    border: 0.3rem solid var(--background-color);
     border-radius: 10rem;
     margin: 0;
+    position: relative;
+    top: -1.4rem;
 }
 
 .opportunities__wrapper {
@@ -324,7 +328,7 @@ img {
 }
 
 .tools__picture {
-    border-radius: 0.8rem;
+    border-radius: 0.9rem;
     width: 32.8rem;
     height: 23rem;
     margin: 2.6rem 0 0;
@@ -417,12 +421,13 @@ img {
     list-style-type: none;
     display: flex;
     flex-direction: row;
-    flex-wrap: wrap;
+    flex-wrap: wrap-reverse;
     justify-content: center;
 }
 
 .help__picture {
     border-radius: 1.6rem;
+    max-width: 7.3rem;
     margin: 0.5rem;
 }
 
@@ -564,7 +569,7 @@ img {
     margin: 2rem auto 1.2rem 2rem;
 }
 
-.press__headline-item {
+.press__quote {
     color: var(--start-text-button);
     font-family: "Montserrat", sans-serif;
     font-size: 1.8rem;
@@ -643,7 +648,7 @@ img {
     margin: 2.4rem auto 1.6rem 2rem;
 }
 
-.podcasts__headline-item {
+.podcasts__quote {
     color: var(--headline-color);
     font-family: "Montserrat", sans-serif;
     font-size: 1.7rem;
