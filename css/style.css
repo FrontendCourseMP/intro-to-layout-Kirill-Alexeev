@@ -539,6 +539,10 @@ img {
     padding: 1.3rem 2.2rem;
 }
 
+.partners__picture {
+    min-height: 2rem;
+}
+
 .press__wrapper {
     max-width: 36rem;
     margin: 8rem auto 8rem;
