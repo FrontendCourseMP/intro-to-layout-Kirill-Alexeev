@@ -60,7 +60,11 @@
                         <a class="projects__link" style="color: #707F8D;" href="#">More</a>
                     </li>
                 </ul>
-                <img class="projects__picture" src="images/Artworks.jpg" alt="Artworks">
+                <picture>
+                    <source
+                        srcset="images/Artworks.jpg, images/Artworks-2x.jpg 2x, images/Artworks-3x.jpg 3x, images/Artworks-4x.jpg 4x">
+                    <img class="projects__picture" src="images/Artworks.jpg" alt="Artworks">
+                </picture>
                 <a class="projects__main-link" href="#">1000+ projects launched on Superdao</a>
             </div>
         </section>
@@ -115,7 +119,10 @@
                         <a class="tools__link" href="#">App store</a>
                     </li>
                 </ul>
-                <img class="tools__picture" src="images/App.jpg" alt="App">
+                <picture>
+                    <source srcset="images/App.jpg, images/App-2x.jpg 2x, images/App-3x.jpg 3x, images/App-4x.jpg 4x">
+                    <img class="tools__picture" src="images/App.jpg" alt="App">
+                </picture>
                 <a class="tools__video-link" href="#">Watch video</a>
             </div>
         </section>
@@ -167,19 +174,39 @@
                 <h2 class="help__headline">Help at every step</h2>
                 <ul class="help__list-images">
                     <li class="help__item-image">
-                        <img class="help__picture" src="images/Man2.png" alt="Man">
+                        <picture>
+                            <source
+                                srcset="images/Man1.jpg, images/Man1-2x.jpg 2x, images/Man1-3x.jpg 3x, images/Man1-4x.jpg 4x">
+                            <img class="help__picture" src="images/Man1.jpg" alt="Man">
+                        </picture>
                     </li>
                     <li class="help__item-image">
-                        <img class="help__picture" src="images/Woman2.png" alt="Woman">
+                        <picture>
+                            <source
+                                srcset="images/Woman1.jpg, images/Woman1-2x.jpg 2x, images/Woman1-3x.jpg 3x, images/Woman1-4x.jpg 4x">
+                            <img class="help__picture" src="images/Woman1.jpg" alt="Woman">
+                        </picture>
                     </li>
                     <li class="help__item-image">
-                        <img class="help__picture" src="images/Woman3.png" alt="Man">
+                        <picture>
+                            <source
+                                srcset="images/Man2.jpg, images/Man2-2x.jpg 2x, images/Man2-3x.jpg 3x, images/Man2-4x.jpg 4x">
+                            <img class="help__picture" src="images/Man2.jpg" alt="Man">
+                        </picture>
                     </li>
                     <li class="help__item-image">
-                        <img class="help__picture" src="images/Man1.png" alt="Woman">
+                        <picture>
+                            <source
+                                srcset="images/Woman2.jpg, images/Woman2-2x.jpg 2x, images/Woman2-3x.jpg 3x, images/Woman2-4x.jpg 4x">
+                            <img class="help__picture" src="images/Woman2.jpg" alt="Woman">
+                        </picture>
                     </li>
                     <li class="help__item-image">
-                        <img class="help__picture" src="images/Woman1.png" alt="Woman">
+                        <picture>
+                            <source
+                                srcset="images/Woman3.jpg, images/Woman3-2x.jpg 2x, images/Woman3-3x.jpg 3x, images/Woman3-4x.jpg 4x">
+                            <img class="help__picture" src="images/Woman3.jpg" alt="Woman">
+                        </picture>
                     </li>
                 </ul>
                 <ul class="help__list-texts">
@@ -308,15 +335,22 @@
                 <h2 class="podcasts__headline">Podсasts</h2>
                 <ul class="podcasts__list">
                     <li class="podcasts__item">
-                        <img class="podcasts__picture" src="images/PompPodcast.svg" alt="The Pomp Podcast">
+                        <picture>
+                            <source
+                                srcset="images/PompPodcast.jpg, images/PompPodcast-2x.jpg 2x, images/PompPodcast-3x.jpg 3x, images/PompPodcast-4x.jpg 4x">
+                            <img class="podcasts__picture" src="images/PompPodcast.jpg" alt="The Pomp Podcast icon">
+                        </picture>
                         <p class="podcasts__quote">Understanding DAOs with Yury Lifshits</p>
                         <p class="podcasts__paragraf-title">The Pomp Podcast</p>
                         <p class="podcasts__paragraf-author">Anthony Pompliano</p>
                         <a class="podcasts__link" href="#">Listen</a>
                     </li>
                     <li class="podcasts__item">
-                        <img class="podcasts__picture" src="images/UnstoppablePodcast.svg"
-                            alt="The Unstoppable Podcast">
+                        <picture>
+                            <source srcset="images/UnstoppablePodcast.jpg, images/UnstoppablePodcast-2x.jpg 2x, images/UnstoppablePodcast-3x.jpg 3x, images/UnstoppablePodcast-4x.jpg 4x">
+                            <img class="podcasts__picture" src="images/UnstoppablePodcast.jpg"
+                                alt="The Unstoppable Podcast icon">
+                        </picture>
                         <p class="podcasts__quote">Everything You Need to Know About DAOs with Yury Lifshits
                             from Superdao</p>
                         <p class="podcasts__paragraf-title">The Unstoppable Podcast</p>
@@ -324,7 +358,10 @@
                         <a class="podcasts__link" href="#">Watch</a>
                     </li>
                     <li class="podcasts__item">
-                        <img class="podcasts__picture" src="images/ZimaRed.svg" alt="Zima Red">
+                        <picture>
+                            <source srcset="images/ZimaRed.jpg, images/ZimaRed-2x.jpg 2x, images/ZimaRed-3x.jpg 3x, images/ZimaRed-4x.jpg 4x">
+                            <img class="podcasts__picture" src="images/ZimaRed.jpg" alt="Zima Red icon">
+                        </picture>
                         <p class="podcasts__quote">Yury Lifshits - Superdao: The “Shopify” for DAOs</p>
                         <p class="podcasts__paragraf-title">Zima Red</p>
                         <p class="podcasts__paragraf-author">Andrew Stainwold</p>
@@ -352,6 +389,9 @@
                 </li>
                 <li class="footer__menu-item">
                     <a class="footer__menu-link" href="grid.html">Grid</a>
+                </li>
+                <li class="footer__menu-item">
+                    <a class="footer__menu-link" href="form.html">Form</a>
                 </li>
             </ul>
             <ul class="footer__list">
