@@ -1,0 +1,25 @@
+.opportunities__wrapper {
+    min-width: 36rem;
+    margin: 8rem auto 8rem;
+    padding: 0 1.6rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.opportunities__headline {
+    margin: 0 0 2.4rem;
+}
+
+.opportunities__list {
+    list-style-type: none;
+    text-align: center;
+}
+
+.opportunities__link {
+    color: var(--opportunities-link-color);
+    text-decoration: none;
+    font-size: 2rem;
+    font-weight: 700;
+    line-height: 3.6rem;
+}

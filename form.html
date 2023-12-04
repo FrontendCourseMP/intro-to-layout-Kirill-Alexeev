@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/normalize.css">
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/form.css">
     <title>Superdao</title>
 </head>
 
@@ -26,7 +26,59 @@
     </header>
 
     <main>
-        
+        <div class="form__wrapper wrapper">
+            <h2 class="form__headline">Регистрация пользователя</h2>
+            <form action="//httpbin.org/post" enctype="text/plain" method="post" class="form">
+                <div class="form__self">
+                    <p class="form__paragraf">Персональная информация</p>
+                    <label for="" class="form__label">Имя <span class="red">*</span>
+                        <input type="text" name="name" placeholder="Алексеев Кирилл" required class="form__input">
+                    </label>
+                    <label for="" class="form__label">Дата рождения <span class="red">*</span>
+                        <input type="date" name="date" required class="form__input">
+                    </label>
+                    <fieldset class="form__fieldset">
+                        <legend class="form__legend">Пол</legend>
+                        <label for="" class="form__label">Мужской
+                            <input type="radio" name="sex" class="form__input">
+                        </label>
+                        <label for="" class="form__label">Женский
+                            <input type="radio" name="sex" class="form__input">
+                        </label>
+                    </fieldset>
+                    <label for="" class="form__label">Пароль <span class="red">*</span>
+                        <input type="password" name="password" placeholder="********" required class="form__input">
+                    </label>
+                </div>
+                <div class="form__contacts">
+                    <p class="form__paragraf">Контакная информация</p>
+                    <label for="" class="form__label">E-mail <span class="red">*</span>
+                        <input type="email" name="email" placeholder="mail@kontora.com" required class="form__input">
+                    </label>
+                    <label for="" class="form__label">Телефон
+                        <input type="tel" name="telephone" placeholder="89001112233" class="form__input">
+                    </label>
+                    <fieldset class="form__fieldset">
+                        <legend class="form__legend">Когда с вами лучше связаться?</legend>
+                        <label for="" class="form__label">Утро
+                            <input type="radio" name="sex" class="form__input">
+                        </label>
+                        <label for="" class="form__label">День
+                            <input type="radio" name="sex" class="form__input">
+                        </label>
+                        <label for="" class="form__label">Вечер
+                            <input type="radio" name="sex" class="form__input">
+                        </label>
+                        <label for="" class="form__label">Ночь
+                            <input type="radio" name="sex" class="form__input">
+                        </label>
+                    </fieldset>
+                </div>
+                <button type="reset" class="form__button">Сбросить</button>
+                <button type="submit" class="form__button">Отправить</button>
+                <p class="form__inscription"><span class="red">*</span> - поля обязательные для заполнения</p>
+            </form>
+        </div>
     </main>
 
     <footer class="footer">

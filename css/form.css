@@ -106,11 +106,10 @@ a {
 h2 {
     color: var(--headline-color);
     text-align: center;
-    font-family: "Montserrat", sans-serif;
     font-size: 2.8rem;
-    font-style: normal;
     font-weight: 700;
     line-height: 3.6rem;
+    margin: 0 0 2rem;
 }
 
 ul {
@@ -129,6 +128,8 @@ img {
 
 .body {
     background-color: var(--background-color);
+    font-family: "Montserrat", sans-serif;
+    font-style: normal;
 }
 
 .header__wrapper {
@@ -155,7 +156,82 @@ img {
     background-color: var(--background-color);
 }
 
+.form__wrapper {
+    min-width: 36rem;
+    margin: 8rem auto 0;
+    padding: 0 1.6rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
 
+.form__paragraf {
+    color: var(--headline-color);
+    font-size: 2rem;
+    font-weight: 600;
+    line-height: 2.4rem;
+}
+
+.form__label {
+    color: var(--headline-color);
+    font-size: 1.4rem;
+    font-weight: 600;
+    line-height: 1.8rem;
+    display: block;
+    margin: 1.5rem;
+}
+
+.form__inscription {
+    color: var(--newsletter-input-color);
+    font-size: 1.4rem;
+    font-weight: 600;
+    line-height: 1.8rem;
+    display: block;
+    margin: 1.5rem;
+}
+
+.red {
+    color: red
+}
+
+.form__fieldset {
+    display: flex;
+    justify-content: center;
+}
+
+.form__legend {
+    color: var(--headline-color);
+    font-size: 1.4rem;
+    font-weight: 600;
+    line-height: 1.8rem;
+    margin: 1rem;
+}
+
+.form__input {
+    border: 0.1rem solid var(--newsletter-border-color);
+    background-color: var(--input-background-color);
+    color: var(--newsletter-input-color);
+    width: 100%;
+    padding: 1.3rem 1.84rem 1.3rem 1.8rem;
+    border-radius: 1rem;
+    font-size: 1.4rem;
+    font-weight: 600;
+    line-height: 1.8rem;
+}
+
+.form__button {
+    background-color: var(--newsletter-button-color);
+    color: var(--start-text-button);
+    width: 100%;
+    border: 0;
+    border-radius: 1rem;
+    text-align: center;
+    font-size: 1.6rem;
+    font-weight: 600;
+    line-height: 2.4rem;
+    margin: 0.8rem 0;
+    padding: 1rem 0rem;
+}
 
 .footer {
     background-color: var(--input-background-color);
@@ -186,9 +262,7 @@ img {
 .footer__menu-link {
     color: var(--headline-color);
     text-decoration: none;
-    font-family: "Montserrat", sans-serif;
     font-size: 1.4rem;
-    font-style: normal;
     font-weight: 600;
     line-height: normal;
     margin: 0 2rem;
@@ -210,52 +284,46 @@ img {
     margin: 0 1rem;
 }
 
-@media (max-width: 768px) {
+@media (min-width: 416px) and (max-width: 768px) {
     .wrapper {
         max-width: 40rem;
-    }
-
-    .start__headline {
-        width: 31.4rem;
-    }
-
-    .start__paragraf {
-        width: 31.4rem;
     }
 }
 
 @media (min-width: 768px) {
-    .wrapper {
+    h2 {
+        font-size: 3.6rem;
+        line-height: normal;
+    }
+
+    .header__wrapper {
         max-width: 73.6rem;
     }
 
-    .start__headline {
-        width: 45.4rem;
-        font-size: 5.2rem;
-        line-height: 6rem;
+    .form__wrapper {
+        max-width: 73.6rem;
     }
-
-    .start__paragraf {
-        width: 49.9rem;
-        font-size: 2rem;
-        line-height: 3.4rem;
+    
+    .footer__wrapper {
+        max-width: 73.6rem;
     }
 }
 
 @media (min-width: 1200px) {
-    .wrapper {
+    h2 {
+        font-size: 5.4rem;
+        line-height: normal;
+    }
+
+    .header__wrapper {
         max-width: 114rem;
     }
 
-    .start__headline {
-        width: 64.2rem;
-        font-size: 7.2rem;
-        line-height: 8.2rem;
+    .form__wrapper {
+        max-width: 114rem;
     }
 
-    .start__paragraf {
-        width: 64.9rem;
-        font-size: 2.6rem;
-        line-height: 4.6rem;
+    .footer__wrapper {
+        max-width: 114rem;
     }
 }

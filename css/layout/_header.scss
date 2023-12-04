@@ -1,0 +1,29 @@
+.header__wrapper {
+    min-width: 36rem;
+    margin: 1.6rem auto;
+    padding: 0 1.6rem;
+    display: flex;
+    justify-content: space-between;
+}
+
+.logo {
+    text-decoration: none;
+    width: 14rem;
+    height: 2.3rem;
+}
+
+.header__navigation {
+    display: none;
+}
+
+.header__menu {
+    background-color: var(--background-color);
+    text-align: center;
+    width: 2.4rem;
+    height: 2.4rem;
+    border: 0cm;
+}
+
+.header__burger-menu {
+    background-color: var(--background-color);
+}
