@@ -6,13 +6,35 @@
     justify-content: space-between;
 }
 
-.logo {
-    text-decoration: none;
+.header__logo {
+    display: flex;
+    align-items: center;
+}
+
+.header__picture {
     width: 14rem;
     height: 2.3rem;
 }
 
 .header__navigation {
+    display: none;
+}
+
+.header__menu-list {
+    list-style-type: none;
+    text-align: center;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.header__menu-item {
+    margin: 0 1.2rem;
+    display: flex;
+    align-items: center;
+}
+
+.header__login {
     display: none;
 }
 

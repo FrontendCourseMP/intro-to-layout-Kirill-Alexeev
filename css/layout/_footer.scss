@@ -12,7 +12,7 @@
 }
 
 .footer__logo {
-    margin: 3.2rem auto 3.2rem;
+    margin: 3.2rem auto;
 }
 
 .footer__menu {
@@ -22,6 +22,11 @@
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: center;
+    width: 26rem;
+}
+
+.footer__menu-item {
+    margin: 0.5rem 2rem;
 }
 
 .footer__menu-link {
@@ -30,7 +35,6 @@
     font-size: 1.4rem;
     font-weight: 600;
     line-height: normal;
-    margin: 0 2rem;
 }
 
 .footer__list {
@@ -43,8 +47,11 @@
     margin: 3.2rem auto;
 }
 
+.footer__item {
+    margin: 0 1rem;
+}
+
 .footer__icon {
     width: 4rem;
     height: 4rem;
-    margin: 0 1rem;
 }

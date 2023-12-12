@@ -12,8 +12,8 @@
 <body class="body">
     <header class="header">
         <div class="header__wrapper wrapper">
-            <a class="header__logo logo" href="#">
-                <img class="logo__picture" src="images/Logo1.svg" alt="Logo">
+            <a class="header__logo" href="#">
+                <img class="header__picture" src="images/Logo1.svg" alt="Logo">
             </a>
             <button class="header__menu" type="button" name="menu">
                 <svg class="header__burger-menu" width="16.5" height="15.5" viewBox="0 0 18 16" fill="none">
@@ -24,13 +24,24 @@
             </button>
             <nav class="header__navigation">
                 <ul class="header__menu-list">
-                    <li class="header__menu-item">Product</li>
-                    <li class="header__menu-item">Use cases</li>
-                    <li class="header__menu-item">Learn</li>
-                    <li class="header__menu-item">About</li>
-                    <li class="header__menu-item">Jobs</li>
+                    <li class="header__menu-item">
+                        <a href="#" class="header__link">Product</a>
+                    </li>
+                    <li class="header__menu-item">
+                        <a href="#" class="header__link">Use cases</a>
+                    </li>
+                    <li class="header__menu-item">
+                        <a href="#" class="header__link">Learn</a>
+                    </li>
+                    <li class="header__menu-item">
+                        <a href="#" class="header__link">About</a>
+                    </li>
+                    <li class="header__menu-item">
+                        <a href="#" class="header__link">Jobs</a>
+                    </li>
                 </ul>
             </nav>
+            <a class="header__login" href="#">Login</a>
         </div>
     </header>
     <main class="main">
@@ -124,6 +135,7 @@
                     <li class="tools__item">
                         <a class="tools__link" href="#">Governance</a>
                     </li>
+
                     <li class="tools__item">
                         <a class="tools__link" href="#">App store</a>
                     </li>
@@ -264,25 +276,27 @@
         <section class="partners">
             <div class="partners__wrapper wrapper">
                 <h2 class="partners__headline">Backed by</h2>
-                <ul class="partners__list">
-                    <li class="partners__item">
-                        <img class="partners__picture" src="images/Alliance.svg" alt="Alliance icon">
+                <ul class="partners__list-top list">
+                    <li class="partners__item-top">
+                        <img class="partners__picture-top" src="images/Alliance.svg" alt="Alliance icon">
                     </li>
-                    <li class="partners__item">
-                        <img class="partners__picture" src="images/Digital.svg" alt="Digital icon">
+                    <li class="partners__item-top">
+                        <img class="partners__picture-top" src="images/Digital.svg" alt="Digital icon">
                     </li>
-                    <li class="partners__item">
-                        <img class="partners__picture" src="images/OneBlock.svg" alt="One block icon">
+                    <li class="partners__item-top">
+                        <img class="partners__picture-top" src="images/OneBlock.svg" alt="One block icon">
                     </li>
-                    <li class="partners__item">
-                        <img class="partners__picture" src="images/Fika.svg" alt="Fika icon">
+                    <li class="partners__item-top">
+                        <img class="partners__picture-top" src="images/Fika.svg" alt="Fika icon">
                     </li>
-                    <li class="partners__item">
-                        <img class="partners__picture" src="images/Pear.svg" alt="Pear icon">
+                    <li class="partners__item-top">
+                        <img class="partners__picture-top" src="images/Pear.svg" alt="Pear icon">
                     </li>
-                    <li class="partners__item">
-                        <img class="partners__picture" src="images/ShimaCapital.svg" alt="Shima Capital icon">
+                    <li class="partners__item-top">
+                        <img class="partners__picture-top" src="images/ShimaCapital.svg" alt="Shima Capital icon">
                     </li>
+                </ul>
+                <ul class="partners__list-bottom list">
                     <li class="partners__item">
                         <img class="partners__picture" src="images/GreatOaks.svg" alt="Great oaks icon">
                     </li>
@@ -302,6 +316,24 @@
                         <img class="partners__picture" src="images/Venturesouo.svg" alt="Venturesouq icon">
                     </li>
                 </ul>
+                <!--
+                <div class="partners__top list">
+                    <img class="partners__picture-top" src="images/Alliance.svg" alt="Alliance icon">
+                    <img class="partners__picture-top" src="images/Digital.svg" alt="Digital icon">
+                    <img class="partners__picture-top" src="images/OneBlock.svg" alt="One block icon">
+                    <img class="partners__picture-top" src="images/Fika.svg" alt="Fika icon">
+                    <img class="partners__picture-top" src="images/Pear.svg" alt="Pear icon">
+                    <img class="partners__picture-top" src="images/ShimaCapital.svg" alt="Shima Capital icon">
+                </div>
+                <div class="partners__bottom list">
+                    <img class="partners__picture" src="images/GreatOaks.svg" alt="Great oaks icon">
+                    <img class="partners__picture" src="images/Norwest.svg" alt="Norwest icon">
+                    <img class="partners__picture" src="images/FiftyYears.svg" alt="Fifty years icon">
+                    <img class="partners__picture" src="images/Circle.svg" alt="Circle icon">
+                    <img class="partners__picture" src="images/ProtocolLabs.svg" alt="Protocol labs icon">
+                    <img class="partners__picture" src="images/Venturesouo.svg" alt="Venturesouq icon">
+                </div>
+            -->
             </div>
         </section>
         <section class="press">
@@ -356,7 +388,8 @@
                     </li>
                     <li class="podcasts__item">
                         <picture>
-                            <source srcset="images/UnstoppablePodcast.jpg, images/UnstoppablePodcast-2x.jpg 2x, images/UnstoppablePodcast-3x.jpg 3x, images/UnstoppablePodcast-4x.jpg 4x">
+                            <source
+                                srcset="images/UnstoppablePodcast.jpg, images/UnstoppablePodcast-2x.jpg 2x, images/UnstoppablePodcast-3x.jpg 3x, images/UnstoppablePodcast-4x.jpg 4x">
                             <img class="podcasts__picture" src="images/UnstoppablePodcast.jpg"
                                 alt="The Unstoppable Podcast icon">
                         </picture>
@@ -368,7 +401,8 @@
                     </li>
                     <li class="podcasts__item">
                         <picture>
-                            <source srcset="images/ZimaRed.jpg, images/ZimaRed-2x.jpg 2x, images/ZimaRed-3x.jpg 3x, images/ZimaRed-4x.jpg 4x">
+                            <source
+                                srcset="images/ZimaRed.jpg, images/ZimaRed-2x.jpg 2x, images/ZimaRed-3x.jpg 3x, images/ZimaRed-4x.jpg 4x">
                             <img class="podcasts__picture" src="images/ZimaRed.jpg" alt="Zima Red icon">
                         </picture>
                         <p class="podcasts__quote">Yury Lifshits - Superdao: The “Shopify” for DAOs</p>
@@ -383,8 +417,8 @@
     </main>
     <footer class="footer">
         <div class="footer__wrapper wrapper">
-            <a class="footer__logo logo" href="#">
-                <img class="logo__picture" src="images/logo.svg" alt="Logo">
+            <a class="footer__logo" href="#">
+                <img class="footer__picture" src="images/logo.svg" alt="Logo">
             </a>
             <ul class="footer__menu">
                 <li class="footer__menu-item">
