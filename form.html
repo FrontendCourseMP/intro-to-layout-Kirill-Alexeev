@@ -12,8 +12,8 @@
 <body class="body">
     <header class="header">
         <div class="header__wrapper wrapper">
-            <a class="header__logo logo" href="#">
-                <img class="logo__picture" src="images/Logo1.svg" alt="Logo">
+            <a class="header__logo" href="#">
+                <img class="header__picture" src="images/Logo1.svg" alt="Logo">
             </a>
             <button class="header__menu" type="button" name="menu">
                 <svg class="header__burger-menu" width="16.5" height="15.5" viewBox="0 0 18 16" fill="none">
@@ -22,55 +22,75 @@
                         fill="#FFCF01" />
                 </svg>
             </button>
+            <nav class="header__navigation">
+                <ul class="header__menu-list">
+                    <li class="header__menu-item">
+                        <a href="#" class="header__link">Product</a>
+                    </li>
+                    <li class="header__menu-item">
+                        <a href="#" class="header__link">Use cases</a>
+                    </li>
+                    <li class="header__menu-item">
+                        <a href="#" class="header__link">Learn</a>
+                    </li>
+                    <li class="header__menu-item">
+                        <a href="#" class="header__link">About</a>
+                    </li>
+                    <li class="header__menu-item">
+                        <a href="#" class="header__link">Jobs</a>
+                    </li>
+                </ul>
+            </nav>
+            <a class="header__login" href="#">Login</a>
         </div>
     </header>
 
     <main>
         <div class="form__wrapper wrapper">
             <h2 class="form__headline">Регистрация пользователя</h2>
-            <form action="//httpbin.org/post" enctype="text/plain" method="post" class="form">
+            <form action="//httpbin.org/post" method="post" class="form">
                 <div class="form__self">
                     <p class="form__paragraf">Персональная информация</p>
-                    <label for="" class="form__label">Имя <span class="red">*</span>
+                    <label class="form__label">Имя <span class="red">*</span>
                         <input type="text" name="name" placeholder="Алексеев Кирилл" required class="form__input">
                     </label>
-                    <label for="" class="form__label">Дата рождения <span class="red">*</span>
+                    <label class="form__label">Дата рождения <span class="red">*</span>
                         <input type="date" name="date" required class="form__input">
                     </label>
                     <fieldset class="form__fieldset">
                         <legend class="form__legend">Пол</legend>
-                        <label for="" class="form__label">Мужской
-                            <input type="radio" name="sex" class="form__input">
+                        <label class="form__label">Мужской
+                            <input type="radio" name="sex" value="Мужской" class="form__input">
                         </label>
-                        <label for="" class="form__label">Женский
-                            <input type="radio" name="sex" class="form__input">
+                        <label class="form__label">Женский
+                            <input type="radio" name="sex" value="Женский" class="form__input">
                         </label>
                     </fieldset>
-                    <label for="" class="form__label">Пароль <span class="red">*</span>
+                    <label class="form__label">Пароль <span class="red">*</span>
                         <input type="password" name="password" placeholder="********" required class="form__input">
                     </label>
                 </div>
                 <div class="form__contacts">
                     <p class="form__paragraf">Контакная информация</p>
-                    <label for="" class="form__label">E-mail <span class="red">*</span>
+                    <label class="form__label">E-mail <span class="red">*</span>
                         <input type="email" name="email" placeholder="mail@kontora.com" required class="form__input">
                     </label>
-                    <label for="" class="form__label">Телефон
+                    <label class="form__label">Телефон
                         <input type="tel" name="telephone" placeholder="89001112233" class="form__input">
                     </label>
                     <fieldset class="form__fieldset">
-                        <legend class="form__legend">Когда с вами лучше связаться?</legend>
-                        <label for="" class="form__label">Утро
-                            <input type="radio" name="sex" class="form__input">
+                        <legend class="form__legend">Когда c вами лучше связаться?</legend>
+                        <label class="form__label">Утро
+                            <input type="checkbox" name="day" value="Утро" class="form__input">
                         </label>
-                        <label for="" class="form__label">День
-                            <input type="radio" name="sex" class="form__input">
+                        <label class="form__label">День
+                            <input type="checkbox" name="day" value="День" class="form__input">
                         </label>
-                        <label for="" class="form__label">Вечер
-                            <input type="radio" name="sex" class="form__input">
+                        <label class="form__label">Вечер
+                            <input type="checkbox" name="day" value="Вечер" class="form__input">
                         </label>
-                        <label for="" class="form__label">Ночь
-                            <input type="radio" name="sex" class="form__input">
+                        <label class="form__label">Ночь
+                            <input type="checkbox" name="day" value="Ночь" class="form__input">
                         </label>
                     </fieldset>
                 </div>
@@ -83,8 +103,8 @@
 
     <footer class="footer">
         <div class="footer__wrapper wrapper">
-            <a class="footer__logo logo" href="#">
-                <img class="logo__picture" src="images/logo.svg" alt="Logo">
+            <a class="footer__logo" href="#">
+                <img class="footer__picture" src="images/logo.svg" alt="Logo">
             </a>
             <ul class="footer__menu">
                 <li class="footer__menu-item">
@@ -98,6 +118,9 @@
                 </li>
                 <li class="footer__menu-item">
                     <a class="footer__menu-link" href="grid.html">Grid</a>
+                </li>
+                <li class="footer__menu-item">
+                    <a class="footer__menu-link" href="form.html">Form</a>
                 </li>
             </ul>
             <ul class="footer__list">
