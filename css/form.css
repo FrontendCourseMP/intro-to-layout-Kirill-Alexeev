@@ -238,7 +238,7 @@ img {
 .form__input {
     border: 1px solid var(--newsletter-border-color);
     background-color: var(--input-background-color);
-    color: var(--newsletter-input-color);
+    color: var(--headline-color);
     width: 100%;
     padding: 1.3rem 1.8rem;
     margin: 1rem 0;
@@ -246,6 +246,10 @@ img {
     font-size: 1.4rem;
     font-weight: 600;
     line-height: 1.8rem;
+}
+
+.form__input::placeholder {
+    color: var(--newsletter-border-color);
 }
 
 .form__button {
