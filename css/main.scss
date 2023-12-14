@@ -389,14 +389,11 @@ img {
     .press__item {
         width: 23.2rem;
         min-height: 33.5rem;
-        position: relative;
     }
 
     .press__link {
         font-size: 1.2rem;
-        position: absolute;
-        top: 30rem;
-        margin: 0 auto 0 2rem;
+        margin: 0 auto 2rem 2rem;
     }
 
     .podcasts__list {
@@ -408,14 +405,11 @@ img {
     .podcasts__item {
         width: 23.2rem;
         min-height: 28.4rem;
-        position: relative;
     }
 
     .podcasts__link {
         font-size: 1.2rem;
-        position: absolute;
-        top: 25rem;
-        margin: 0 auto 0 2rem;
+        margin: 0 auto 2rem 2rem;
     }
 
     .footer__wrapper {
@@ -652,20 +646,26 @@ img {
         min-height: 38.2rem;
     }
 
+    .press__icon {
+        margin: 2rem auto 1.2rem 3rem;
+    }
+
     .press__quote {
         font-size: 2.2rem;
         line-height: 3rem;
+        padding: 0 3rem 0.8rem;
     }
 
     .press__paragraf {
         font-size: 1.7rem;
         line-height: 2.9rem;
+        padding: 0 3rem 0.8rem;
     }
 
     .press__link {
         font-size: 1.6rem;
         line-height: normal;
-        top: 33rem;
+        margin: 0 auto 3.2rem 3rem;
     }
 
     .press__main-link {
@@ -684,25 +684,32 @@ img {
         min-height: 33.4rem;
     }
 
+    .podcasts__picture {
+        margin: 2.4rem auto 1.6rem 3rem;
+    }
+
     .podcasts__quote {
         font-size: 2rem;
         line-height: 2.8rem;
+        margin: 0 3rem 1.2rem;
     }
 
     .podcasts__paragraf-author {
         font-size: 1.7rem;
         line-height: normal;
+        margin: 0 4rem 1.7rem 3rem;
     }
 
     .podcasts__paragraf-title {
         font-size: 1.7rem;
         line-height: normal;
+        margin: 0 3rem;
     }
 
     .podcasts__link {
         font-size: 1.6rem;
         line-height: normal;
-        top: 28.4rem;
+        margin: 0 auto 3.2rem 3rem;
     }
 
     .podcasts__main-link {
