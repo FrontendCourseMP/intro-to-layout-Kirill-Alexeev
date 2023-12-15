@@ -386,25 +386,15 @@ img {
   justify-content: space-around;
 }
 
-.works__icon-wrapper {
+.works__icon {
+  display: block;
   width: 8.4rem;
   height: 8.4rem;
-  display: flex;
-  justify-content: center;
-  align-items: center;
   border-radius: 2rem;
-  border: 0.0957rem solid #2A3744;
+  border: 0.1px solid var(--newsletter-border-color);
   background-color: var(--input-background-color);
   padding: 2.4rem;
-  margin: 0 1rem 0 1rem;
-}
-
-.works__icon {
-  display: flex;
-  width: 3.6rem;
-  height: 3.6rem;
-  justify-content: center;
-  align-items: center;
+  margin: 0 1rem;
 }
 
 .works__paragraf {
@@ -449,8 +439,8 @@ img {
 }
 
 .help__picture {
-  border-radius: 1.6rem;
   max-width: 7.3rem;
+  border-radius: 1.6rem;
   margin: 0.5rem;
 }
 
@@ -894,6 +884,9 @@ img {
     margin: 0;
     padding: 0.8rem 2.4rem;
   }
+  .projects__picture {
+    border-radius: 2rem;
+  }
   .projects__main-link {
     font-size: 1.6rem;
     line-height: 3.2rem;
@@ -915,27 +908,33 @@ img {
     font-size: 1.6rem;
     line-height: 2.8rem;
   }
+  .tools__picture {
+    border-radius: 2rem;
+  }
   .tools__video-link {
     font-size: 1.7rem;
     line-height: 3.6rem;
     padding: 1rem 4.4rem;
   }
-  .works__icon-wrapper {
+  .works__icon {
+    display: block;
     width: 10rem;
     height: 10rem;
     border-radius: 24px;
     border-width: 2px;
-  }
-  .works__icon {
-    width: 4.4rem;
-    height: 4.4rem;
+    padding: 2.4rem;
   }
   .works__paragraf {
     font-size: 1.4rem;
     line-height: 2.4rem;
   }
   .help__list-images {
-    margin: 0 0 3.7rem;
+    gap: 1.6rem;
+    margin: 0 0 4.8rem;
+  }
+  .help__item-image {
+    max-width: 11.2rem;
+    border-radius: 2.4rem;
   }
   .help__item-image:first-child {
     flex-basis: 0%;
@@ -978,10 +977,21 @@ img {
     line-height: 3.6rem;
     border-radius: 1.6rem;
   }
+  .press__wrapper {
+    display: grid;
+    grid-template: 45px 1fr/1fr 1fr;
+    min-height: 408px;
+  }
+  .press__headline {
+    grid-area: 1/1/2/2;
+    margin: 0;
+    justify-self: start;
+  }
   .press__list {
     display: flex;
-    flex-direction: row;
+    grid-area: 2/1/-1/-1;
     gap: 2rem;
+    margin: 2.8rem 0 0;
   }
   .press__item {
     width: 23.2rem;
@@ -991,10 +1001,25 @@ img {
     font-size: 1.2rem;
     margin: 0 auto 2rem 2rem;
   }
+  .press__main-link {
+    margin: 0;
+    justify-self: end;
+  }
+  .podcasts__wrapper {
+    display: grid;
+    grid-template: 45px 1fr/1fr 1fr;
+    min-height: 357px;
+  }
+  .podcasts__headline {
+    grid-area: 1/1/2/2;
+    margin: 0;
+    justify-self: start;
+  }
   .podcasts__list {
     display: flex;
-    flex-direction: row;
+    grid-area: 2/1/-1/-1;
     gap: 2rem;
+    margin: 2.8rem 0 0;
   }
   .podcasts__item {
     width: 23.2rem;
@@ -1003,6 +1028,10 @@ img {
   .podcasts__link {
     font-size: 1.2rem;
     margin: 0 auto 2rem 2rem;
+  }
+  .podcasts__main-link {
+    margin: 0;
+    justify-self: end;
   }
   .footer__wrapper {
     flex-direction: row;
@@ -1095,16 +1124,19 @@ img {
     width: 100rem;
     gap: 2.4rem;
   }
+  .projects__item {
+    font-size: 2rem;
+    line-height: 4rem;
+    padding: 0.8rem 2.6rem;
+  }
+  .projects__picture {
+    border-radius: 2.9rem;
+  }
   .projects__main-link {
     font-size: 1.8rem;
     line-height: 3.2rem;
     padding: 0.6rem 2.4rem;
     top: -2.2rem;
-  }
-  .projects__item {
-    font-size: 2rem;
-    line-height: 4rem;
-    padding: 0.8rem 2.6rem;
   }
   .opportunities__headline {
     margin: 0 0 3.4rem;
@@ -1126,6 +1158,9 @@ img {
     font-size: 2.2rem;
     line-height: 4rem;
   }
+  .tools__picture {
+    border-radius: 2.9rem;
+  }
   .tools__video-link {
     font-size: 2rem;
     line-height: 3.6rem;
@@ -1134,22 +1169,25 @@ img {
   .works__headline {
     margin: 0 0 4.4rem;
   }
-  .works__icon-wrapper {
+  .works__icon {
+    display: block;
     width: 16rem;
     height: 16rem;
     border-radius: 40px;
     border-width: 2px;
-  }
-  .works__icon {
-    width: 5.6rem;
-    height: 5.6rem;
+    padding: 5.2rem;
   }
   .works__paragraf {
     font-size: 2.2rem;
     line-height: 4rem;
   }
   .help__list-images {
+    gap: 2.5rem;
     margin: 0 0 4.8rem;
+  }
+  .help__item-image {
+    max-width: 16rem;
+    border-radius: 4rem;
   }
   .help__list-texts {
     width: 80rem;
@@ -1189,6 +1227,7 @@ img {
     display: flex;
     flex-direction: row;
     gap: 2rem;
+    margin: 4rem 0 0;
   }
   .press__item {
     width: 36.1rem;
@@ -1220,12 +1259,15 @@ img {
     display: flex;
     flex-direction: row;
     gap: 2.8rem;
+    margin: 4rem 0 0;
   }
   .podcasts__item {
     width: 36.1rem;
     min-height: 33.4rem;
   }
   .podcasts__picture {
+    width: 5rem;
+    height: 5rem;
     margin: 2.4rem auto 1.6rem 3rem;
   }
   .podcasts__quote {

@@ -20,25 +20,15 @@
     justify-content: space-around;
 }
 
-.works__icon-wrapper {
+.works__icon {
+    display: block;
     width: 8.4rem;
     height: 8.4rem;
-    display: flex;
-    justify-content: center;
-    align-items: center;
     border-radius: 2rem;
-    border: 0.0957rem solid #2A3744;
+    border: 0.1px solid var(--newsletter-border-color);
     background-color: var(--input-background-color);
     padding: 2.4rem;
-    margin: 0 1rem 0 1rem;
-}
-
-.works__icon {
-    display: flex;
-    width: 3.6rem;
-    height: 3.6rem;
-    justify-content: center;
-    align-items: center;
+    margin: 0 1rem;
 }
 
 .works__paragraf {
