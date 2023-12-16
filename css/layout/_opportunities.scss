@@ -22,4 +22,20 @@
     font-size: 2rem;
     font-weight: 700;
     line-height: 3.6rem;
+    transition: transform 0.3s, color 0.1s;
+}
+
+.opportunities__link:focus {
+    transform: scale(1.1);
+    color: var(--opportunities-hover-color);
+}
+
+.opportunities__link:hover {
+    transform: scale(1.1);
+    color: var(--opportunities-hover-color);
+}
+
+.opportunities__link:active {
+    transform: scale(1);
+    color: var(--headline-color);
 }

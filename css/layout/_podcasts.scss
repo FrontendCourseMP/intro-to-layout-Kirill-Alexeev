@@ -78,4 +78,20 @@
     font-weight: 700;
     line-height: 3.2rem;
     margin: 2.4rem 0 0;
+    transition: transform 0.3s, color 0.1s;
+}
+
+.podcasts__main-link:focus {
+    transform: scale(1.1);
+    color: var(--opportunities-hover-color);
+}
+
+.podcasts__main-link:hover {
+    transform: scale(1.1);
+    color: var(--opportunities-hover-color);
+}
+
+.podcasts__main-link:active {
+    transform: scale(1);
+    color: var(--headline-color);
 }

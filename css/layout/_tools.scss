@@ -32,6 +32,22 @@
     font-weight: 600;
     line-height: 1.6222rem;
     margin: 0;
+    transition: transform 0.3s, color 0.1s;
+}
+
+.tools__link:focus {
+    transform: scale(1.2);
+    color: var(--menu-link-hover-color);
+}
+
+.tools__link:hover {
+    transform: scale(1.2);
+    color: var(--menu-link-hover-color);
+}
+
+.tools__link:active {
+    transform: scale(1.1);
+    color: var(--headline-color);
 }
 
 .tools__picture {
@@ -52,4 +68,23 @@
     padding: 0.4rem 2.9rem 0.4rem 3rem;
     border-radius: 0.8rem;
     margin: 2.4rem 0 0 0;
+    transition: transform 0.4s, color 0.1s, background-color 0.1s;
+}
+
+.tools__video-link:focus {
+    transform: scale(1.2);
+    color: var(--headline-color);
+    background-color: var(--video-link-hover-color);
+}
+
+.tools__video-link:hover {
+    transform: scale(1.2);
+    color: var(--headline-color);
+    background-color: var(--video-link-hover-color);
+}
+
+.tools__video-link:focus {
+    transform: scale(1.1);
+    color: var(--start-button-color);
+    background-color: var(--tools-button-color);
 }

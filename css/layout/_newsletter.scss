@@ -33,15 +33,19 @@
 }
 
 .newsletter__input {
-    border: 0.1rem solid var(--newsletter-border-color);
+    border: 1px solid var(--newsletter-border-color);
     background-color: var(--input-background-color);
-    color: var(--newsletter-input-color);
+    color: var(--headline-color);
     width: 100%;
     padding: 1.3rem 1.8rem;
     border-radius: 1rem;
     font-size: 1.4rem;
     font-weight: 600;
     line-height: 1.8rem;
+}
+
+.newsletter__input::placeholder {
+    color: var(--newsletter-input-color);
 }
 
 .newsletter__button {
@@ -56,4 +60,23 @@
     line-height: 2.4rem;
     margin: 1.6rem 0;
     padding: 1rem 0rem;
+    transition: transform 0.3s, color 0.1s, background-color 0.1s;
+}
+
+.newsletter__button:focus {
+    transform: scale(1.1);
+    color: var(--input-background-color);
+    background-color: var(--headline-color);
+}
+
+.newsletter__button:hover {
+    transform: scale(1.1);
+    color: var(--input-background-color);
+    background-color: var(--headline-color);
+}
+
+.newsletter__button:active {
+    transform: scale(1);
+    color: var(--headline-color);
+    background-color: var(--newsletter-border-color);
 }

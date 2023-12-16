@@ -82,7 +82,8 @@
     --start-text-button: #10151A;
     --start-button-color: #FFCF01;
     --projects-item-color: #182632;
-    --opportunities-link-color: #5b6e82;
+    --opportunities-link-color: #5a6d80;
+    --opportunities-hover-color: #23C9DE;
     --tools-link-color: #8395A7;
     --newsletter-paragraf-color: #9AAFC3;
     --newsletter-button-color: #E2C1F9;
@@ -94,11 +95,18 @@
     --input-background-color: #121E28;
     --podcasts-paragraf-color: #E2E2E2;
     --blur-color: #5C9DFF;
+    --menu-link-hover-color: #ffc803;
+    --video-link-hover-color: #3e350d;
     font-size: 62.5%
 }
 
 * {
     box-sizing: border-box;
+}
+
+::selection {
+    color: var(--background-color);
+    background-color: var(--blur-color);
 }
 
 a {
@@ -184,7 +192,7 @@ img {
     .help__item-image:first-child {
         flex-basis: 0%;
     }
-    
+
     .help__item-image:nth-child(2) {
         flex-basis: 0%;
     }
@@ -213,7 +221,7 @@ img {
         font-size: 3.6rem;
         line-height: normal;
     }
-    
+
     .header__wrapper {
         max-width: 73.6rem;
         margin: 3rem auto;
@@ -295,12 +303,15 @@ img {
     }
 
     .projects__item {
+        margin: 0;
+    }
+
+    .projects__link {
         font-size: 1.6rem;
         line-height: 3.2rem;
-        margin: 0;
         padding: 0.8rem 2.4rem;
     }
-    
+
     .projects__picture {
         border-radius: 2rem;
     }
@@ -311,7 +322,7 @@ img {
         padding: 0.2rem 2rem;
         top: -1.8rem
     }
-    
+
     .opportunities__wrapper {
         max-width: 73.6rem;
         margin: 10rem auto 0;
@@ -364,7 +375,7 @@ img {
         border-width: 2px;
         padding: 2.4rem;
     }
-    
+
     .works__paragraf {
         font-size: 1.4rem;
         line-height: 2.4rem;
@@ -388,7 +399,7 @@ img {
     .help__item-image:first-child {
         flex-basis: 0%;
     }
-    
+
     .help__item-image:nth-child(2) {
         flex-basis: 0%;
     }
@@ -645,8 +656,8 @@ img {
         width: 100rem;
         gap: 2.4rem;
     }
-    
-    .projects__item {
+
+    .projects__link {
         font-size: 2rem;
         line-height: 4rem;
         padding: 0.8rem 2.6rem;
@@ -912,6 +923,7 @@ img {
         position: absolute;
         top: 370px;
         left: 290px;
+        z-index: -1;
         width: 526px;
         height: 79px;
         opacity: 0.7;

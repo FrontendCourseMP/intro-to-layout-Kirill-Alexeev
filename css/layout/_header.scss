@@ -9,6 +9,20 @@
 .header__logo {
     display: flex;
     align-items: center;
+    transition: transform 1s ease;
+}
+
+.header__logo:focus {
+    transform: scale(1.2);
+}
+
+.header__logo:hover {
+    transform: scale(1.2);
+}
+
+.header__logo:active {
+    transform: scale(1.1);
+    transition: transform 0.1s;
 }
 
 .header__picture {
@@ -34,8 +48,45 @@
     align-items: center;
 }
 
+.header__link {
+    transition: transform 0.3s, color 0.1s;
+}
+
+.header__link:focus {
+    transform: scale(1.1);
+    color: var(--menu-link-hover-color);
+}
+
+.header__link:hover {
+    transform: scale(1.1);
+    color: var(--menu-link-hover-color);
+}
+
+.header__link:active {
+    color: var(--tools-button-color);
+}
+
 .header__login {
     display: none;
+    transition: transform 0.3s, color 0.1s, background-color 0.1s;
+}
+
+.header__login:focus {
+    transform: scale(1.1);
+    color: var(--menu-link-hover-color);
+    background-color: var(--projects-item-color);
+}
+
+.header__login:hover {
+    transform: scale(1.1);
+    color: var(--menu-link-hover-color);
+    background-color: var(--projects-item-color);
+}
+
+.header__login:active {
+    transform: scale(1);
+    color: var(--projects-item-color);
+    background-color: var(--menu-link-hover-color);
 }
 
 .header__menu {
@@ -44,8 +95,21 @@
     width: 2.4rem;
     height: 2.4rem;
     border: 0cm;
+    transition: transform 0.3s;
 }
 
 .header__burger-menu {
     background-color: var(--background-color);
+}
+
+.header__menu:focus {
+    transform: scale(1.1);
+}
+
+.header__menu:hover {
+    transform: scale(1.1);
+}
+
+.header__menu:active {
+    transform: scale(1);
 }
