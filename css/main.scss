@@ -82,7 +82,7 @@
     --start-text-button: #10151A;
     --start-button-color: #FFCF01;
     --projects-item-color: #182632;
-    --opportunities-link-color: #37424D;
+    --opportunities-link-color: #5b6e82;
     --tools-link-color: #8395A7;
     --newsletter-paragraf-color: #9AAFC3;
     --newsletter-button-color: #E2C1F9;
@@ -93,6 +93,7 @@
     --newsletter-input-color: #3D4C5B;
     --input-background-color: #121E28;
     --podcasts-paragraf-color: #E2E2E2;
+    --blur-color: #5C9DFF;
     font-size: 62.5%
 }
 
@@ -213,8 +214,9 @@ img {
         line-height: normal;
     }
     
-    .wrapper {
+    .header__wrapper {
         max-width: 73.6rem;
+        margin: 3rem auto;
     }
 
     .header__menu {
@@ -245,6 +247,12 @@ img {
         margin: 0;
     }
 
+    .start__wrapper {
+        position: relative;
+        max-width: 73.6rem;
+        margin: 7rem auto 0;
+    }
+
     .start__headline {
         width: 45.4rem;
         font-size: 5.2rem;
@@ -260,6 +268,21 @@ img {
     .start__button {
         font-size: 1.7rem;
         padding: 1.3rem 3.7rem;
+    }
+
+    .start__blur {
+        position: absolute;
+        top: 120px;
+        width: 252px;
+        height: 75px;
+        border-radius: 252px;
+        background-color: var(--blur-color);
+        filter: blur(200px);
+    }
+
+    .projects__wrapper {
+        max-width: 73.6rem;
+        margin: 13.7rem auto 0;
     }
 
     .projects__headline {
@@ -288,10 +311,20 @@ img {
         padding: 0.2rem 2rem;
         top: -1.8rem
     }
+    
+    .opportunities__wrapper {
+        max-width: 73.6rem;
+        margin: 10rem auto 0;
+    }
 
     .opportunities__link {
         font-size: 3.2rem;
         line-height: 5rem;
+    }
+
+    .tools__wrapper {
+        max-width: 73.6rem;
+        margin: 10rem auto 0;
     }
 
     .tools__headline {
@@ -318,6 +351,11 @@ img {
         padding: 1rem 4.4rem;
     }
 
+    .works__wrapper {
+        max-width: 73.6rem;
+        margin: 10rem auto 0;
+    }
+
     .works__icon {
         display: block;
         width: 10rem;
@@ -330,6 +368,11 @@ img {
     .works__paragraf {
         font-size: 1.4rem;
         line-height: 2.4rem;
+    }
+
+    .help__wrapper {
+        max-width: 73.6rem;
+        margin: 10rem auto 0;
     }
 
     .help__list-images {
@@ -358,6 +401,8 @@ img {
 
     .newsletter__wrapper {
         border-width: 2px;
+        max-width: 73.6rem;
+        margin: 10rem auto 0;
     }
 
     .newsletter__paragraf {
@@ -395,6 +440,8 @@ img {
         display: grid;
         grid-template: 45px 1fr/1fr 1fr;
         min-height: 408px;
+        max-width: 73.6rem;
+        margin: 10rem auto 0;
     }
 
     .press__headline {
@@ -429,6 +476,8 @@ img {
         display: grid;
         grid-template: 45px 1fr/1fr 1fr;
         min-height: 357px;
+        max-width: 73.6rem;
+        margin: 10rem auto 0;
     }
 
     .podcasts__headline {
@@ -462,6 +511,8 @@ img {
     .footer__wrapper {
         flex-direction: row;
         justify-content: space-between;
+        max-width: 73.6rem;
+        margin: 22rem auto 0;
     }
 
     .footer__picture {
@@ -503,8 +554,9 @@ img {
         line-height: normal;
     }
 
-    .wrapper {
+    .header__wrapper {
         max-width: 114rem;
+        margin: 3.4rem auto;
     }
 
     .header__menu {
@@ -544,6 +596,12 @@ img {
         margin: 0;
     }
 
+    .start__wrapper {
+        max-width: 114rem;
+        position: relative;
+        margin: 13rem auto 0;
+    }
+
     .start__headline {
         width: 64.2rem;
         font-size: 7.2rem;
@@ -560,6 +618,23 @@ img {
         font-size: 2rem;
         line-height: 3.6rem;
         padding: 1.6rem 4.8rem;
+        box-shadow: 0px 9px 44px 0px rgba(255, 207, 1, 0.20);
+    }
+
+    .start__blur {
+        position: absolute;
+        top: 65px;
+        width: 388px;
+        height: 131px;
+        border-radius: 388px;
+        background-color: var(--blur-color);
+        filter: blur(332px);
+    }
+
+    .projects__wrapper {
+        max-width: 114rem;
+        position: relative;
+        margin: 20rem auto 0;
     }
 
     .projects__headline {
@@ -585,7 +660,23 @@ img {
         font-size: 1.8rem;
         line-height: 3.2rem;
         padding: 0.6rem 2.4rem;
-        top: -2.2rem
+        top: -2.5rem
+    }
+
+    .projects__blur {
+        position: absolute;
+        top: 400px;
+        width: 388px;
+        height: 131px;
+        border-radius: 388px;
+        background-color: var(--blur-color);
+        filter: blur(332px);
+    }
+
+    .opportunities__wrapper {
+        max-width: 114rem;
+        position: relative;
+        margin: 20rem auto 0;
     }
 
     .opportunities__headline {
@@ -597,6 +688,22 @@ img {
         font-size: 5.4rem;
         line-height: 6.4rem;
         margin: 1rem 0;
+    }
+
+    .opportunities__blur {
+        position: absolute;
+        top: 150px;
+        width: 636px;
+        height: 41px;
+        border-radius: 636px;
+        background-color: var(--blur-color);
+        filter: blur(332px);
+    }
+
+    .tools__wrapper {
+        max-width: 114rem;
+        position: relative;
+        margin: 20rem auto 0;
     }
 
     .tools__headline {
@@ -623,6 +730,22 @@ img {
         padding: 1.6rem 5.6rem;
     }
 
+    .tools__blur {
+        position: absolute;
+        top: 150px;
+        width: 526px;
+        height: 209px;
+        border-radius: 526px;
+        background-color: var(--blur-color);
+        filter: blur(397px);
+    }
+
+    .works__wrapper {
+        max-width: 114rem;
+        position: relative;
+        margin: 20rem auto 0;
+    }
+
     .works__headline {
         margin: 0 0 4.4rem;
     }
@@ -641,6 +764,22 @@ img {
         line-height: 4rem;
     }
 
+    .works__blur {
+        position: absolute;
+        top: 50px;
+        width: 526px;
+        height: 107px;
+        border-radius: 526px;
+        background-color: var(--blur-color);
+        filter: blur(397px);
+    }
+
+    .help__wrapper {
+        max-width: 114rem;
+        position: relative;
+        margin: 20rem auto 0;
+    }
+
     .help__list-images {
         gap: 2.5rem;
         margin: 0 0 4.8rem;
@@ -655,8 +794,22 @@ img {
         width: 80rem;
     }
 
+    .help__blur {
+        position: absolute;
+        top: 120px;
+        opacity: 0.7;
+        width: 526px;
+        height: 107px;
+        border-radius: 526px;
+        background-color: var(--blur-color);
+        filter: blur(397px);
+    }
+
     .newsletter__wrapper {
+        max-width: 114rem;
+        position: relative;
         border-width: 2px;
+        margin: 20rem auto 0;
     }
 
     .newsletter__headline {
@@ -691,6 +844,29 @@ img {
     .newsletter__button {
         width: 17.5rem;
         border-radius: 1.6rem;
+    }
+
+    .newsletter__blur {
+        position: absolute;
+        top: 150px;
+        width: 526px;
+        height: 75px;
+        opacity: 0.7;
+        border-radius: 526px;
+        background-color: var(--blur-color);
+        filter: blur(397px);
+    }
+
+    .partners__wrapper {
+        max-width: 114rem;
+        position: relative;
+        margin: 20rem auto 0;
+    }
+
+    .press__wrapper {
+        max-width: 114rem;
+        position: relative;
+        margin: 20rem auto 0;
     }
 
     .press__list {
@@ -730,6 +906,24 @@ img {
     .press__main-link {
         font-size: 2.2rem;
         line-height: 4rem;
+    }
+
+    .press__blur {
+        position: absolute;
+        top: 370px;
+        left: 290px;
+        width: 526px;
+        height: 79px;
+        opacity: 0.7;
+        border-radius: 526px;
+        background-color: var(--blur-color);
+        filter: blur(397px);
+    }
+
+    .podcasts__wrapper {
+        max-width: 114rem;
+        position: relative;
+        margin: 20rem auto 0;
     }
 
     .podcasts__list {
@@ -777,6 +971,23 @@ img {
     .podcasts__main-link {
         font-size: 2.2rem;
         line-height: 4rem;
+    }
+
+    .podcasts__blur {
+        position: absolute;
+        top: 249px;
+        left: 290px;
+        width: 526px;
+        height: 79px;
+        opacity: 0.7;
+        border-radius: 526px;
+        background-color: var(--blur-color);
+        filter: blur(397px);
+    }
+
+    .footer__wrapper {
+        max-width: 114rem;
+        margin: 28.5rem auto 0;
     }
 
     .footer__logo {
