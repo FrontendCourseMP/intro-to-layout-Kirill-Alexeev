@@ -68,6 +68,23 @@
     line-height: normal;
     display: block;
     margin: 0 auto 2rem 2rem;
+    transition: transform 0.3s, color 0.1s;
+}
+
+.podcasts__link:focus {
+    transform: scale(1.1);
+    color: var(--opportunities-hover-color);
+}
+
+.podcasts__link:hover {
+    transform: scale(1.1);
+    color: var(--opportunities-hover-color);
+}
+
+.podcasts__link:active {
+    transform: scale(1);
+    color: var(--headline-color);
+    transition: transform 0.1s, color 0.1s;
 }
 
 .podcasts__main-link {
@@ -94,4 +111,5 @@
 .podcasts__main-link:active {
     transform: scale(1);
     color: var(--headline-color);
+    transition: transform 0.1s, color 0.1s;
 }

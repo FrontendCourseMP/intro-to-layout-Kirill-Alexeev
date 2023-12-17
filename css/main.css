@@ -972,6 +972,23 @@ img {
   line-height: normal;
   display: block;
   margin: 0 auto 2rem 2rem;
+  transition: transform 0.3s, color 0.1s;
+}
+
+.podcasts__link:focus {
+  transform: scale(1.1);
+  color: var(--opportunities-hover-color);
+}
+
+.podcasts__link:hover {
+  transform: scale(1.1);
+  color: var(--opportunities-hover-color);
+}
+
+.podcasts__link:active {
+  transform: scale(1);
+  color: var(--headline-color);
+  transition: transform 0.1s, color 0.1s;
 }
 
 .podcasts__main-link {
@@ -998,6 +1015,7 @@ img {
 .podcasts__main-link:active {
   transform: scale(1);
   color: var(--headline-color);
+  transition: transform 0.1s, color 0.1s;
 }
 
 .footer {
@@ -1015,6 +1033,20 @@ img {
 
 .footer__logo {
   margin: 3.2rem auto;
+  transition: transform 1s ease;
+}
+
+.footer__logo:focus {
+  transform: scale(1.2);
+}
+
+.footer__logo:hover {
+  transform: scale(1.2);
+}
+
+.footer__logo:active {
+  transform: scale(1.1);
+  transition: transform 0.1s;
 }
 
 .footer__menu {
@@ -1032,11 +1064,29 @@ img {
 }
 
 .footer__menu-link {
+  display: block;
   color: var(--headline-color);
   text-decoration: none;
   font-size: 1.4rem;
   font-weight: 600;
   line-height: normal;
+  transition: transform 0.3s, color 0.1s;
+}
+
+.footer__menu-link:focus {
+  transform: scale(1.2);
+  color: var(--menu-link-hover-color);
+}
+
+.footer__menu-link:hover {
+  transform: scale(1.2);
+  color: var(--menu-link-hover-color);
+}
+
+.footer__menu-link:active {
+  transform: scale(1);
+  color: var(--tools-button-color);
+  transition: transform 0.1s, color 0.1s;
 }
 
 .footer__list {
@@ -1051,6 +1101,24 @@ img {
 
 .footer__item {
   margin: 0 1rem;
+}
+
+.footer__link {
+  display: block;
+  transition: transform 0.4s;
+}
+
+.footer__link:focus {
+  transform: scale(1.2);
+}
+
+.footer__link:hover {
+  transform: scale(1.2);
+}
+
+.footer__link:active {
+  transform: scale(1.1);
+  transition: transform 0.1s;
 }
 
 .footer__icon {
