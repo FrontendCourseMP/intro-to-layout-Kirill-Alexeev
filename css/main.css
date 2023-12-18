@@ -197,7 +197,7 @@ img {
   transition: transform 0.3s, color 0.1s;
 }
 
-.header__link:focus {
+.header__link:focus-visible {
   transform: scale(1.1);
   color: var(--menu-link-hover-color);
 }
@@ -216,7 +216,7 @@ img {
   transition: transform 0.3s, color 0.1s, background-color 0.1s;
 }
 
-.header__login:focus {
+.header__login:focus-visible {
   transform: scale(1.1);
   color: var(--menu-link-hover-color);
   background-color: var(--projects-item-color);
@@ -302,7 +302,7 @@ img {
   transition: transform 0.4s, color 0.1s, background-color 0.1s, box-shadow 0.3s;
 }
 
-.start__button:focus {
+.start__button:focus-visible {
   transform: scale(1.2);
   color: var(--headline-color);
   background-color: var(--projects-text-color);
@@ -371,7 +371,7 @@ img {
   transition: transform 0.3s, color 0.1s, background-color 0.1s;
 }
 
-.projects__link:focus {
+.projects__link:focus-visible {
   transform: scale(1.1);
   color: var(--headline-color);
 }
@@ -404,7 +404,7 @@ img {
   transition: transform 0.4s, color 0.1s, background-color 0.1s;
 }
 
-.projects__main-link:focus {
+.projects__main-link:focus-visible {
   transform: scale(1.2);
   color: var(--headline-color);
   background-color: var(--start-button-color);
@@ -449,7 +449,7 @@ img {
   transition: transform 0.3s, color 0.1s;
 }
 
-.opportunities__link:focus {
+.opportunities__link:focus-visible {
   transform: scale(1.1);
   color: var(--opportunities-hover-color);
 }
@@ -501,7 +501,7 @@ img {
   transition: transform 0.3s, color 0.1s;
 }
 
-.tools__link:focus {
+.tools__link:focus-visible {
   transform: scale(1.2);
   color: var(--menu-link-hover-color);
 }
@@ -537,7 +537,7 @@ img {
   transition: transform 0.4s, color 0.1s, background-color 0.1s;
 }
 
-.tools__video-link:focus {
+.tools__video-link:focus-visible {
   transform: scale(1.2);
   color: var(--headline-color);
   background-color: var(--video-link-hover-color);
@@ -549,7 +549,7 @@ img {
   background-color: var(--video-link-hover-color);
 }
 
-.tools__video-link:focus {
+.tools__video-link:active {
   transform: scale(1.1);
   color: var(--start-button-color);
   background-color: var(--tools-button-color);
@@ -696,6 +696,7 @@ img {
   font-size: 1.4rem;
   font-weight: 600;
   line-height: 1.8rem;
+  transition: transform 0.3s;
 }
 
 .newsletter__input::-moz-placeholder {
@@ -704,6 +705,18 @@ img {
 
 .newsletter__input::placeholder {
   color: var(--newsletter-input-color);
+}
+
+.newsletter__input:focus-visible {
+  transform: scale(1.05);
+}
+
+.newsletter__input:hover {
+  transform: scale(1.05);
+}
+
+.newsletter__input:active {
+  transform: scale(1.05);
 }
 
 .newsletter__button {
@@ -721,7 +734,7 @@ img {
   transition: transform 0.3s, color 0.1s, background-color 0.1s;
 }
 
-.newsletter__button:focus {
+.newsletter__button:focus-visible {
   transform: scale(1.1);
   color: var(--input-background-color);
   background-color: var(--headline-color);
@@ -860,7 +873,7 @@ img {
   transition: transform 0.3s, color 0.1s;
 }
 
-.press__link:focus {
+.press__link:focus-visible {
   transform: scale(1.1);
   color: var(--newsletter-background-color);
 }
@@ -886,7 +899,7 @@ img {
   transition: transform 0.3s, color 0.1s;
 }
 
-.press__main-link:focus {
+.press__main-link:focus-visible {
   transform: scale(1.1);
   color: var(--opportunities-hover-color);
 }
@@ -975,7 +988,7 @@ img {
   transition: transform 0.3s, color 0.1s;
 }
 
-.podcasts__link:focus {
+.podcasts__link:focus-visible {
   transform: scale(1.1);
   color: var(--opportunities-hover-color);
 }
@@ -1002,7 +1015,7 @@ img {
   transition: transform 0.3s, color 0.1s;
 }
 
-.podcasts__main-link:focus {
+.podcasts__main-link:focus-visible {
   transform: scale(1.1);
   color: var(--opportunities-hover-color);
 }
@@ -1073,7 +1086,7 @@ img {
   transition: transform 0.3s, color 0.1s;
 }
 
-.footer__menu-link:focus {
+.footer__menu-link:focus-visible {
   transform: scale(1.2);
   color: var(--menu-link-hover-color);
 }
@@ -1108,7 +1121,7 @@ img {
   transition: transform 0.4s;
 }
 
-.footer__link:focus {
+.footer__link:focus-visible {
   transform: scale(1.2);
 }
 

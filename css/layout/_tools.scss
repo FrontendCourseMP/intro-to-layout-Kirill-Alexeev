@@ -35,7 +35,7 @@
     transition: transform 0.3s, color 0.1s;
 }
 
-.tools__link:focus {
+.tools__link:focus-visible {
     transform: scale(1.2);
     color: var(--menu-link-hover-color);
 }
@@ -71,7 +71,7 @@
     transition: transform 0.4s, color 0.1s, background-color 0.1s;
 }
 
-.tools__video-link:focus {
+.tools__video-link:focus-visible {
     transform: scale(1.2);
     color: var(--headline-color);
     background-color: var(--video-link-hover-color);
@@ -83,7 +83,7 @@
     background-color: var(--video-link-hover-color);
 }
 
-.tools__video-link:focus {
+.tools__video-link:active {
     transform: scale(1.1);
     color: var(--start-button-color);
     background-color: var(--tools-button-color);

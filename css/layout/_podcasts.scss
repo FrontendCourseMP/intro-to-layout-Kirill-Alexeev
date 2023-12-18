@@ -71,7 +71,7 @@
     transition: transform 0.3s, color 0.1s;
 }
 
-.podcasts__link:focus {
+.podcasts__link:focus-visible {
     transform: scale(1.1);
     color: var(--opportunities-hover-color);
 }
@@ -98,7 +98,7 @@
     transition: transform 0.3s, color 0.1s;
 }
 
-.podcasts__main-link:focus {
+.podcasts__main-link:focus-visible {
     transform: scale(1.1);
     color: var(--opportunities-hover-color);
 }

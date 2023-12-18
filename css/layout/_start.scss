@@ -41,7 +41,7 @@
     transition: transform 0.4s, color 0.1s, background-color 0.1s, box-shadow 0.3s;
 }
 
-.start__button:focus {
+.start__button:focus-visible {
     transform: scale(1.2);
     color: var(--headline-color);
     background-color: var(--projects-text-color);

@@ -25,7 +25,7 @@
     transition: transform 0.3s, color 0.1s;
 }
 
-.opportunities__link:focus {
+.opportunities__link:focus-visible {
     transform: scale(1.1);
     color: var(--opportunities-hover-color);
 }

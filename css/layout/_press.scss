@@ -74,7 +74,7 @@
     transition: transform 0.3s, color 0.1s;
 }
 
-.press__link:focus {
+.press__link:focus-visible {
     transform: scale(1.1);
     color: var(--newsletter-background-color);
 }
@@ -100,7 +100,7 @@
     transition: transform 0.3s, color 0.1s;
 }
 
-.press__main-link:focus {
+.press__main-link:focus-visible {
     transform: scale(1.1);
     color: var(--opportunities-hover-color);
 }

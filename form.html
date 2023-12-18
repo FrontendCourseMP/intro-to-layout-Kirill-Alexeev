@@ -1,12 +1,12 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/form.css">
-    <title>Superdao</title>
+    <title>Form</title>
 </head>
 
 <body class="body">
@@ -59,11 +59,13 @@
                     </label>
                     <fieldset class="form__fieldset">
                         <legend class="form__legend">Пол</legend>
-                        <label class="form__label">Мужской
-                            <input type="radio" name="sex" value="Мужской" class="form__input">
+                        <label class="form__radio">
+                            <input type="radio" name="sex" checked value="Мужской" class="form__input check">
+                            <span>Мужской</span>
                         </label>
-                        <label class="form__label">Женский
-                            <input type="radio" name="sex" value="Женский" class="form__input">
+                        <label class="form__radio">
+                            <input type="radio" name="sex" value="Женский" class="form__input check">
+                            <span>Женский</span>
                         </label>
                     </fieldset>
                     <label class="form__label">Пароль <span class="red">*</span>
@@ -80,23 +82,210 @@
                     </label>
                     <fieldset class="form__fieldset">
                         <legend class="form__legend">Когда c вами лучше связаться?</legend>
-                        <label class="form__label">Утро
-                            <input type="checkbox" name="day" value="Утро" class="form__input">
+                        <label class="form__checkbox">
+                            <input type="checkbox" name="day" value="Утро" class="form__input check">
+                            <span>Утро</span>
                         </label>
-                        <label class="form__label">День
-                            <input type="checkbox" name="day" value="День" class="form__input">
+                        <label class="form__checkbox">
+                            <input type="checkbox" name="day" value="День" class="form__input check">
+                            <span>День</span>
                         </label>
-                        <label class="form__label">Вечер
-                            <input type="checkbox" name="day" value="Вечер" class="form__input">
+                        <label class="form__checkbox">
+                            <input type="checkbox" name="day" value="Вечер" class="form__input check">
+                            <span>Вечер</span>
                         </label>
-                        <label class="form__label">Ночь
-                            <input type="checkbox" name="day" value="Ночь" class="form__input">
+                        <label class="form__checkbox">
+                            <input type="checkbox" name="day" value="Ночь" class="form__input check">
+                            <span>Ночь</span>
                         </label>
                     </fieldset>
                 </div>
                 <button type="reset" class="form__button">Сбросить</button>
                 <button type="submit" class="form__button">Отправить</button>
                 <p class="form__inscription"><span class="red">*</span> - поля обязательные для заполнения</p>
+            </form>
+        </div>
+        <div class="new-form__wrapper">
+            <h2 class="new-form__headline">Дополнение</h2>
+            <form action="//httpbin.org/post" method="post" class="new-form">
+                <dl class="new-form__list">
+                    <dt class="new-form__term">Псевдокласс</dt>
+                    <dd class="new-form__definition">- это селектор, который выбирает элементы, находящиеся в специфическом состоянии, например, они
+                        являются первым элементом своего типа, или на них наведён указатель мыши.</dd>
+                    <dt class="new-form__term">Псевдоэлемент</dt>
+                    <dd class="new-form__definition">- это дополнение к селектору, с помощью которого можно стилизовать элемент, не определённый в
+                        структуре HTML документа.</dd>
+                </dl>
+                <p class="form__paragraf">Псевдоклассы</p>
+                <ul class="new-form__list1">
+                    <li class="form__item">
+                        <label class="new-form__label">
+                            <input checked name="pseudoclass" value=":focus" class="new-form__input" type="checkbox">
+                            <span>:focus</span>
+                        </label>
+                    </li>
+                    <li class="form__item">
+                        <label class="new-form__label">
+                            <input checked name="pseudoclass" value=":focus-visible" class="new-form__input" type="checkbox">
+                            <span>:focus-visible</span>
+                        </label>
+                    </li>
+                    <li class="form__item">
+                        <label class="new-form__label">
+                            <input name="pseudoclass" value=":focus-within" class="new-form__input" type="checkbox">
+                            <span>:focus-within</span>
+                        </label>
+                    </li>
+                    <li class="form__item">
+                        <label class="new-form__label">
+                            <input checked name="pseudoclass" value=":active" class="new-form__input" type="checkbox">
+                            <span>:active</span>
+                        </label>
+                    </li>
+                    <li class="form__item">
+                        <label class="new-form__label">
+                            <input checked name="pseudoclass" value=":hover" class="new-form__input" type="checkbox">
+                            <span>:hover</span>
+                        </label>
+                    </li>
+                    <li class="form__item">
+                        <label class="new-form__label">
+                            <input name="pseudoclass" value=":checked" class="new-form__input" type="checkbox">
+                            <span>:checked</span>
+                        </label>
+                    </li>
+                    <li class="form__item">
+                        <label class="new-form__label">
+                            <input name="pseudoclass" value=":is()" class="new-form__input" type="checkbox">
+                            <span>:is()</span>
+                        </label>
+                    </li>
+                    <li class="form__item">
+                        <label class="new-form__label">
+                            <input name="pseudoclass" value=":default" class="new-form__input" type="checkbox">
+                            <span>:default</span>
+                        </label>
+                    </li>
+                    <li class="form__item">
+                        <label class="new-form__label">
+                            <input name="pseudoclass" value=":empty" class="new-form__input" type="checkbox">
+                            <span>:empty</span>
+                        </label>
+                    </li>
+                    <li class="form__item">
+                        <label class="new-form__label">
+                            <input name="pseudoclass" value=":disabled" class="new-form__input" type="checkbox">
+                            <span>:disabled</span>
+                        </label>
+                    </li>
+                    <li class="form__item">
+                        <label class="new-form__label">
+                            <input name="pseudoclass" value=":enabled" class="new-form__input" type="checkbox">
+                            <span>:enabled</span>
+                        </label>
+                    </li>
+                    <li class="form__item">
+                        <label class="new-form__label">
+                            <input checked name="pseudoclass" value=":first-child" class="new-form__input" type="checkbox">
+                            <span>:first-child</span>
+                        </label>
+                    </li>
+                    <li class="form__item">
+                        <label class="new-form__label">
+                            <input checked name="pseudoclass" value=":last-child" class="new-form__input" type="checkbox">
+                            <span>:last-child</span>
+                        </label>
+                    </li>
+                    <li class="form__item">
+                        <label class="new-form__label">
+                            <input checked name="pseudoclass" value=":nth-child()" class="new-form__input" type="checkbox">
+                            <span>:nth-child()</span>
+                        </label>
+                    </li>
+                    <li class="form__item">
+                        <label class="new-form__label">
+                            <input name="pseudoclass" value=":first-of-type" class="new-form__input" type="checkbox">
+                            <span>:first-of-type</span>
+                        </label>
+                    </li>
+                    <li class="form__item">
+                        <label class="new-form__label">
+                            <input name="pseudoclass" value=":last-of-type" class="new-form__input" type="checkbox">
+                            <span>:last-of-type</span>
+                        </label>
+                    </li>
+                    <li class="form__item">
+                        <label class="new-form__label">
+                            <input checked name="pseudoclass" value=":root" class="new-form__input" type="checkbox">
+                            <span>:root</span>
+                        </label>
+                    </li>
+                    <li class="form__item">
+                        <label class="new-form__label">
+                            <input name="pseudoclass" value=":target" class="new-form__input" type="checkbox">
+                            <span>:target</span>
+                        </label>
+                    </li>
+                    <li class="form__item">
+                        <label class="new-form__label">
+                            <input checked name="pseudoclass" value=":last-of-type" class="new-form__input" type="checkbox">
+                            <span>:not()</span>
+                        </label>
+                    </li>
+                    <li class="form__item">
+                        <label class="new-form__label">
+                            <input name="pseudoclass" value=":has()" class="new-form__input" type="checkbox">
+                            <span>:has()</span>
+                        </label>
+                    </li>
+                </ul>
+                <p class="new-form__paragraf">Псевдоэлементы</p>
+                <ul class="new-form__list2">
+                    <li class="form__items">
+                        <label class="new-form__label">
+                            <input checked name="pseudoelement" value="::before" class="new-form__input" type="checkbox">
+                            <span>::before</span>
+                        </label>
+                    </li>
+                    <li class="form__items">
+                        <label class="new-form__label">
+                            <input checked name="pseudoelement" value="::after" class="new-form__input" type="checkbox">
+                            <span class="pseudo">::after</span>
+                        </label>
+                    </li>
+                    <li class="form__items">
+                        <label class="new-form__label">
+                            <input checked name="pseudoelement" value="::first-letter" class="new-form__input" type="checkbox">
+                            <span class="pseudo">::first-letter</span>
+                        </label>
+                    </li>
+                    <li class="form__items">
+                        <label class="new-form__label">
+                            <input name="pseudoelement" value="::first-line" class="new-form__input" type="checkbox">
+                            <span class="pseudo">::first-line</span>
+                        </label>
+                    </li>
+                    <li class="form__items">
+                        <label class="new-form__label">
+                            <input checked name="pseudoelement" value="::selection" class="new-form__input" type="checkbox">
+                            <span class="pseudo">::selection</span>
+                        </label>
+                    </li>
+                    <li class="form__items">
+                        <label class="new-form__label">
+                            <input checked name="pseudoelement" value="::placeholder" class="new-form__input" type="checkbox">
+                            <span class="pseudo">::placeholder</span>
+                        </label>
+                    </li>
+                    <li class="form__items">
+                        <label class="new-form__label">
+                            <input name="pseudoelement" value="::marker" class="new-form__input" type="checkbox">
+                            <span class="pseudo">::marker</span>
+                        </label>
+                    </li>
+                </ul>
+                <button type="reset" class="form__button">Сбросить</button>
+                <button type="submit" class="new-form__button">Отправить</button>
             </form>
         </div>
     </main>
@@ -118,9 +307,6 @@
                 </li>
                 <li class="footer__menu-item">
                     <a class="footer__menu-link" href="grid.html">Grid</a>
-                </li>
-                <li class="footer__menu-item">
-                    <a class="footer__menu-link" href="form.html">Form</a>
                 </li>
             </ul>
             <ul class="footer__list">

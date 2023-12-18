@@ -52,7 +52,7 @@
     transition: transform 0.3s, color 0.1s;
 }
 
-.header__link:focus {
+.header__link:focus-visible {
     transform: scale(1.1);
     color: var(--menu-link-hover-color);
 }
@@ -71,7 +71,7 @@
     transition: transform 0.3s, color 0.1s, background-color 0.1s;
 }
 
-.header__login:focus {
+.header__login:focus-visible {
     transform: scale(1.1);
     color: var(--menu-link-hover-color);
     background-color: var(--projects-item-color);

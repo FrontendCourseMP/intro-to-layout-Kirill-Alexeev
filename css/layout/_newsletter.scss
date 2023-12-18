@@ -42,10 +42,23 @@
     font-size: 1.4rem;
     font-weight: 600;
     line-height: 1.8rem;
+    transition: transform 0.3s;
 }
 
 .newsletter__input::placeholder {
     color: var(--newsletter-input-color);
+}
+
+.newsletter__input:focus-visible {
+    transform: scale(1.05);
+}
+
+.newsletter__input:hover {
+    transform: scale(1.05);
+}
+
+.newsletter__input:active {
+    transform: scale(1.05);
 }
 
 .newsletter__button {
@@ -63,7 +76,7 @@
     transition: transform 0.3s, color 0.1s, background-color 0.1s;
 }
 
-.newsletter__button:focus {
+.newsletter__button:focus-visible {
     transform: scale(1.1);
     color: var(--input-background-color);
     background-color: var(--headline-color);
