@@ -10,6 +10,17 @@
 .projects__headline {
     margin: 0 0 2.34rem;
     width: 30rem;
+    position: relative;
+}
+
+.projects__headline::before {
+    content: '';
+    width: 38px;
+    height: 38.5px;
+    background-image: url(/images/projects.svg);
+    position: absolute;
+    bottom: 60px;
+    right: 275px;
 }
 
 .projects__list {

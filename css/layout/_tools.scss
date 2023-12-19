@@ -10,6 +10,17 @@
 .tools__headline {
     margin: 0 0 2.34rem;
     width: 20rem;
+    position: relative;
+}
+
+.tools__headline::before {
+    content: '';
+    width: 27px;
+    height: 21.5px;
+    background-image: url(/images/tools.svg);
+    position: absolute;
+    right: 190px;
+    bottom: 65px;
 }
 
 .tools__list {
@@ -65,10 +76,11 @@
     font-size: 1.5rem;
     font-weight: 600;
     line-height: 3.6rem;
-    padding: 0.4rem 2.9rem 0.4rem 3rem;
+    padding: 0.4rem 2.9rem 0.4rem 6.2rem;
     border-radius: 0.8rem;
     margin: 2.4rem 0 0 0;
     transition: transform 0.4s, color 0.1s, background-color 0.1s;
+    position: relative;
 }
 
 .tools__video-link:focus-visible {
@@ -87,4 +99,14 @@
     transform: scale(1.1);
     color: var(--start-button-color);
     background-color: var(--tools-button-color);
+}
+
+.tools__video-link::before {
+    content: '';
+    width: 24px;
+    height: 24px;
+    background-image: url(/images/video_icon.svg);
+    position: absolute;
+    top: 10px;
+    left: 30px;
 }

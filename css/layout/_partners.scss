@@ -10,6 +10,17 @@
 
 .partners__headline {
     margin: 0 0 2.4rem;
+    position: relative;
+}
+
+.partners__headline::after {
+    content: '';
+    width: 33px;
+    height: 25.4px;
+    background-image: url(/images/partners.svg);
+    position: absolute;
+    left: 165px;
+    bottom: 26px;
 }
 
 .list {

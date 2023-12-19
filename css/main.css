@@ -143,6 +143,18 @@ img {
   font-style: normal;
 }
 
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border-width: 0;
+}
+
 .header__wrapper {
   min-width: 36rem;
   margin: 1.6rem auto;
@@ -335,6 +347,17 @@ img {
 .projects__headline {
   margin: 0 0 2.34rem;
   width: 30rem;
+  position: relative;
+}
+
+.projects__headline::before {
+  content: "";
+  width: 38px;
+  height: 38.5px;
+  background-image: url(/images/projects.svg);
+  position: absolute;
+  bottom: 60px;
+  right: 275px;
 }
 
 .projects__list {
@@ -433,6 +456,17 @@ img {
 
 .opportunities__headline {
   margin: 0 0 2.4rem;
+  position: relative;
+}
+
+.opportunities__headline::before {
+  content: "";
+  width: 29px;
+  height: 21.7px;
+  background-image: url(/images/opportunities.svg);
+  position: absolute;
+  left: 320px;
+  bottom: 70px;
 }
 
 .opportunities__list {
@@ -476,6 +510,17 @@ img {
 .tools__headline {
   margin: 0 0 2.34rem;
   width: 20rem;
+  position: relative;
+}
+
+.tools__headline::before {
+  content: "";
+  width: 27px;
+  height: 21.5px;
+  background-image: url(/images/tools.svg);
+  position: absolute;
+  right: 190px;
+  bottom: 65px;
 }
 
 .tools__list {
@@ -531,10 +576,11 @@ img {
   font-size: 1.5rem;
   font-weight: 600;
   line-height: 3.6rem;
-  padding: 0.4rem 2.9rem 0.4rem 3rem;
+  padding: 0.4rem 2.9rem 0.4rem 6.2rem;
   border-radius: 0.8rem;
   margin: 2.4rem 0 0 0;
   transition: transform 0.4s, color 0.1s, background-color 0.1s;
+  position: relative;
 }
 
 .tools__video-link:focus-visible {
@@ -555,6 +601,16 @@ img {
   background-color: var(--tools-button-color);
 }
 
+.tools__video-link::before {
+  content: "";
+  width: 24px;
+  height: 24px;
+  background-image: url(/images/video_icon.svg);
+  position: absolute;
+  top: 10px;
+  left: 30px;
+}
+
 .works__wrapper {
   min-width: 32.8rem;
   margin: 8rem auto 0;
@@ -566,6 +622,17 @@ img {
 
 .works__headline {
   margin: 0 0 2.4rem;
+  position: relative;
+}
+
+.works__headline::before {
+  content: "";
+  width: 26px;
+  height: 20.3px;
+  background-image: url(/images/works.svg);
+  position: absolute;
+  left: 170px;
+  bottom: 30px;
 }
 
 .works__list {
@@ -764,6 +831,17 @@ img {
 
 .partners__headline {
   margin: 0 0 2.4rem;
+  position: relative;
+}
+
+.partners__headline::after {
+  content: "";
+  width: 33px;
+  height: 25.4px;
+  background-image: url(/images/partners.svg);
+  position: absolute;
+  left: 165px;
+  bottom: 26px;
 }
 
 .list {
@@ -833,6 +911,17 @@ img {
 
 .press__headline {
   margin: 0 0 2.4rem;
+  position: relative;
+}
+
+.press__headline::before {
+  content: "";
+  width: 32px;
+  height: 33px;
+  background-image: url(/images/press.svg);
+  position: absolute;
+  left: 80px;
+  bottom: 20px;
 }
 
 .press__icon {
@@ -871,6 +960,7 @@ img {
   line-height: normal;
   margin: 0 auto 2rem 2rem;
   transition: transform 0.3s, color 0.1s;
+  position: relative;
 }
 
 .press__link:focus-visible {
@@ -888,6 +978,16 @@ img {
   color: var(--headline-color);
 }
 
+.press__link::after {
+  content: "";
+  width: 11px;
+  height: 10px;
+  background-image: url(/images/blackarrow.svg);
+  position: absolute;
+  left: 46px;
+  bottom: 3.5px;
+}
+
 .press__main-link {
   color: var(--tools-link-color);
   text-decoration: none;
@@ -897,6 +997,7 @@ img {
   line-height: 3.2rem;
   margin: 2.4rem 0 0;
   transition: transform 0.3s, color 0.1s;
+  position: relative;
 }
 
 .press__main-link:focus-visible {
@@ -912,6 +1013,16 @@ img {
 .press__main-link:active {
   transform: scale(1);
   color: var(--headline-color);
+}
+
+.press__main-link::after {
+  content: "";
+  width: 13px;
+  height: 12px;
+  background-image: url(/images/mainarrow.svg);
+  position: absolute;
+  left: 72px;
+  bottom: 10px;
 }
 
 .podcasts__wrapper {
@@ -1029,6 +1140,16 @@ img {
   transform: scale(1);
   color: var(--headline-color);
   transition: transform 0.1s, color 0.1s;
+}
+
+.podcasts__main-link::after {
+  content: "";
+  width: 13px;
+  height: 12px;
+  background-image: url(/images/mainarrow.svg);
+  position: absolute;
+  left: 72px;
+  bottom: 10px;
 }
 
 .footer {

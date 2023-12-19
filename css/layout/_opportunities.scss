@@ -9,6 +9,17 @@
 
 .opportunities__headline {
     margin: 0 0 2.4rem;
+    position: relative;
+}
+
+.opportunities__headline::before {
+    content: '';
+    width: 29px;
+    height: 21.7px;
+    background-image: url(/images/opportunities.svg);
+    position: absolute;
+    left: 320px;
+    bottom: 70px;
 }
 
 .opportunities__list {

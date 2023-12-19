@@ -113,3 +113,13 @@
     color: var(--headline-color);
     transition: transform 0.1s, color 0.1s;
 }
+
+.podcasts__main-link::after {
+    content: '';
+    width: 13px;
+    height: 12px;
+    background-image: url(/images/mainarrow.svg);
+    position: absolute;
+    left: 72px;
+    bottom: 10px;
+}

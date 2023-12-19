@@ -9,6 +9,17 @@
 
 .works__headline {
     margin: 0 0 2.4rem;
+    position: relative;
+}
+
+.works__headline::before {
+    content: '';
+    width: 26px;
+    height: 20.3px;
+    background-image: url(/images/works.svg);
+    position: absolute;
+    left: 170px;
+    bottom: 30px;
 }
 
 .works__list {
