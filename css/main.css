@@ -269,6 +269,7 @@ img {
   height: 2.4rem;
   border: 0cm;
   transition: transform 0.3s;
+  cursor: pointer;
 }
 
 .header__burger-menu {
@@ -327,6 +328,7 @@ img {
   border-radius: 1.2rem;
   padding: 0.8rem 2.8rem;
   margin: 4rem auto 0;
+  cursor: pointer;
   transition: transform 0.4s, color 0.1s, background-color 0.1s, box-shadow 0.3s;
 }
 
@@ -856,6 +858,7 @@ img {
   margin: 1.6rem 0;
   padding: 1rem 0rem;
   transition: transform 0.3s, color 0.1s, background-color 0.1s;
+  cursor: pointer;
 }
 
 .newsletter__button:focus-visible {
