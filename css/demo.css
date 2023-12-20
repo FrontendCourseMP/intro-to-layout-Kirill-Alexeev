@@ -330,7 +330,7 @@ span {
     gap: 20px;
     justify-content: space-around;
     min-width: 100%;
-    animation: scroll 10s linear infinite;
+    animation: scroll 20s linear infinite;
 }
 
 .run__item {
@@ -347,11 +347,11 @@ span {
 
 @keyframes scroll {
     from {
-      transform: translateX(50%);
+      transform: translateX(200%);
     }
 
     to {
-      transform: translateX(-50%);
+      transform: translateX(-200%);
     }
 }
 

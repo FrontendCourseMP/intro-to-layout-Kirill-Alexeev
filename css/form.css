@@ -604,26 +604,9 @@ body {
 .footer__logo {
     display: block;
     margin: 3.2rem auto 3.2rem;
-    transition: transform 1s, scale 1s, rotate 1s;
-}
-
-.footer__logo:focus {
     scale: 1.5;
     rotate: -30deg;
     transform: skew(10deg, 10deg);
-}
-
-.footer__logo:hover {
-    scale: 1.5;
-    rotate: -30deg;
-    transform: skew(10deg, 10deg);
-}
-
-.footer__logo:active {
-    scale: 1.25;
-    rotate: -20deg;
-    transform: skew(5deg, 5deg);
-    transition: transform 0.1s, scale 0.1s, rotate 0.1s;
 }
 
 .footer__menu {

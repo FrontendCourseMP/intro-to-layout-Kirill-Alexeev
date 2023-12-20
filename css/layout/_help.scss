@@ -50,5 +50,46 @@
     font-size: 1.8rem;
     font-weight: 700;
     line-height: normal;
-    margin: 0.4rem 1rem;
+    margin: 0.4rem 1.7rem;
+    position: relative;
+}
+
+.help__item:first-child::before {
+    content: '';
+    width: 15px;
+    height: 15px;
+    background-image: url(/images/help1.svg);
+    position: absolute;
+    bottom: 4px;
+    left: 185px;
+}
+
+.help__item:nth-child(3)::before {
+    content: '';
+    width: 16px;
+    height: 16px;
+    background-image: url(/images/help2.svg);
+    position: absolute;
+    bottom: 4px;
+    left: 134px;
+}
+
+.help__item:nth-child(5)::before {
+    content: '';
+    width: 16px;
+    height: 16px;
+    background-image: url(/images/help3.svg);
+    position: absolute;
+    bottom: 4px;
+    left: 107px;
+}
+
+.help__item:nth-child(8)::before {
+    content: '';
+    width: 16px;
+    height: 16px;
+    background-image: url(/images/help4.svg);
+    position: absolute;
+    bottom: 4px;
+    left: 104px;
 }
